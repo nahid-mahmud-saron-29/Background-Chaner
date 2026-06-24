@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraCut - Premium AI BG Remover</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="glass-panel">
+        <div class="brand">
+            <span class="logo-spark">✨</span>
+            <h1>AuraCut <span>AI</span></h1>
+            <p>Experience studio-quality background removal instantly</p>
+        </div>
+        
+        <div class="upload-zone">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput" class="upload-label">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                <span>Choose or Drag an Image</span>
+            </label>
+        </div>
+        
+        <div class="workspace" style="display: none;" id="workspace">
+            <div class="preview-box">
+                <h3>Original</h3>
+                <div class="img-frame">
+                    <img id="originalImg" src="#" alt="Original">
+                </div>
+            </div>
+            
+            <div class="preview-box">
+                <h3>Result</h3>
+                <div class="img-frame target-frame" id="resultFrame">
+                    <img id="resultImg" src="#" alt="Result">
+                </div>
+            </div>
+        </div>
+
+        <div class="action-area">
+            <button id="removeBtn" class="btn btn-primary">Process Image</button>
+            <button id="downloadBtn" class="btn btn-success" style="display: none;">Download PNG</button>
+        </div>
+
+        <div class="bg-selector-wrapper" id="bgSelectors" style="display: none;">
+            <p>Apply Luxury Backgrounds</p>
+            <div class="bg-options">
+                <div class="bg-thumb trans" data-bg="transparent" title="Transparent"></div>
+                <div class="bg-thumb studio" data-bg="linear-gradient(135deg, #2c3e50, #000000)" title="Studio"></div>
+                <div class="bg-thumb neon" data-bg="linear-gradient(135deg, #f53844, #42378f)" title="Neon Vape"></div>
+                <div class="bg-thumb gold" data-bg="linear-gradient(135deg, #df9f28, #161616)" title="Luxury Gold"></div>
+                <div class="bg-thumb pastel" data-bg="linear-gradient(135deg, #ff9a9e, #fecfef)" title="Soft Pastel"></div>
+            </div>
+        </div>
+    </div>
+
+   </div> <footer class="developer-footer">
+        <p>Engineered by <span class="dev-name">Nahid Mahmud Saron</span></p>
+        <div class="dev-badges">
+            <span class="badge">Android App Developer</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
